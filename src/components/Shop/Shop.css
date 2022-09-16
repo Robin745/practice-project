@@ -1,17 +1,25 @@
 .main-section {
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 3fr 1fr;
+    margin: 50px 0;
 }
 
-.shopping-part {
+.watch-part {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 52px;
-    padding: 50px 100px;
+    gap: 30px;
+    margin-left: 30px;
 }
 
-.calculation-part {
-    top: 80px;
-    padding: 20px;
-    background: rgba(255, 153, 0, 0.3);
+@media only screen and (max-width: 768px) {
+    .main-section {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .watch-part {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 30px;
+    }
 }
