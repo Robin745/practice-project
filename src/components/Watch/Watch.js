@@ -3,9 +3,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import './Watch.css';
 
-const Watch = (props) => {
-    console.log(props.product);
-    const { name, price, picture } = props.product;
+const Watch = ({ product, addToCart }) => {
+
+    const { name, price, picture, id } = product;
 
     return (
         <div className='single-watch'>
@@ -16,7 +16,7 @@ const Watch = (props) => {
                 <p>Price : ${price}</p>
             </div>
 
-            <button className='btn-cart'>
+            <button onClick={() => addToCart(id)} className='btn-cart'>
                 <p>Add To Cart</p>
                 <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon>
             </button>
