@@ -3,14 +3,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
 import './Items.css';
 
-const Item = ({ item }) => {
-    const { name, picture } = item;
+const Item = ({ item, removeItem }) => {
+    const { name, picture, id } = item;
     return (
         <div>
             <div className="selected-item">
                 <img src={picture} alt="" />
                 <p>{name}</p>
-                <button className='remove-item'>
+                <button onClick={() => removeItem(id)} className='remove-item'>
                     <FontAwesomeIcon icon={faTrash}> </FontAwesomeIcon>
                 </button>
             </div>
