@@ -1,20 +1,25 @@
 import React from 'react';
 import './Cart.css';
-import Item from './Item/Item';
+import Item from '../Item/Item';
 
-const Cart = ({ cart }) => {
+const Cart = ({ cart, chooseAgain, chooseOne }) => {
+    // console.log(cart);
+    let products = [...cart];
+
+    // console.log(products);
 
     return (
-        <div>
+        <div className='cart-section'>
             <h3>Selected Products</h3>
             {
-                cart.map(item => <Item item={item}> </Item>)
+                products.map(item => <Item key={item.id} item={item}> </Item>)
             }
             <div className="buttons">
-                <button className='btn-choose-1'>
+                <button onClick={() => chooseOne(products)} className='btn-choose-1'>
                     CHOOSE 1 FOR ME
                 </button>
-                <button className='btn-choose-again'>
+
+                <button onClick={() => chooseAgain()} className='btn-choose-again'>
                     CHOOSE AGAIN
                 </button>
             </div>

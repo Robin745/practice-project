@@ -11,15 +11,36 @@
     margin-left: 30px;
 }
 
-@media only screen and (max-width: 768px) {
+.hidden-item {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
     .main-section {
         display: grid;
         grid-template-columns: 1fr;
+    }
+
+    .hidden-item {
+        display: block;
     }
 
     .watch-part {
         display: grid;
         grid-template-columns: 1fr;
         margin: 0 30px;
+    }
+}
+
+@media only screen and (min-width:600px) and (max-width: 768px) {
+    .main-section {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .watch-part {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0;
     }
 }
