@@ -7,7 +7,7 @@ const Item = ({ item, removeItem }) => {
     const { name, picture, id } = item;
     return (
         <div>
-            <div className="selected-item">
+            <div className="selected-items">
                 <img src={picture} alt="" />
                 <p>{name}</p>
                 <button onClick={() => removeItem(id)} className='remove-item'>

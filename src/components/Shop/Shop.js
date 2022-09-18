@@ -21,12 +21,12 @@ const Shop = () => {
     const addToCart = selectedItem => {
         const product = products.find(product => product.id === selectedItem);
         if (cart.includes(product)) {
-            alert("Can't select more same Item again");
+            alert("Can't Add Same Item again");
             return;
         }
         const newCart = [...cart, product];
         if (newCart.length > 4) {
-            alert("Can't add more then 4 items");
+            alert("Can't Add more then 4 items");
             return;
         }
         setCart(newCart);

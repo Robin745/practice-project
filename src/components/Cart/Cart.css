@@ -29,9 +29,14 @@
     border-radius: 3px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width:600px) {
     .buttons {
-        width: 50%;
-        margin: 0 30px;
+        margin-left: 80px;
+    }
+}
+
+@media only screen and (min-width:600px) and (max-width: 768px) {
+    .cart-section {
+        margin-right: 50px;
     }
 }

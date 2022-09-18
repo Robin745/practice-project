@@ -1,6 +1,6 @@
 # Lucky One
 
-Here is the live site link e: [Create React App](https://github.com/facebook/create-react-app).
+Here is the live site link : https://select-random-watch.netlify.app/
 
 ## Available Scripts
 
