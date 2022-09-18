@@ -1,4 +1,4 @@
-# Lucky One
+# Choose a Random Watch
 
 Here is the live site link : https://select-random-watch.netlify.app/
 
