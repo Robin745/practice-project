@@ -10,6 +10,9 @@ const Shop = () => {
 			<h1 className="text-4xl">Hey, hello welcome to new pull request</h1>
 			<h1 className="text-4xl">Hey, hello welcome to new pull request</h1>
 			<h1 className="text-4xl">Hey, hello welcome to new pull request</h1>
+			<h1 className="text-4xl">Hey, hello welcome to new pull request</h1>
+			<h1 className="text-4xl">Hey, hello welcome to new pull request</h1>
+			<h1 className="text-4xl">Hey, hello welcome to new pull request</h1>
 			<h2>baal hoy na ken</h2>
 			<h3>Baal falaite ashci</h3>
 			<h4>ki jani ki kortesi </h4>
