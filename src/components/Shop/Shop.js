@@ -1,86 +1,24 @@
 import React from 'react';
-import { useEffect } from 'react';
-import { useState } from 'react';
-import Cart from '../Cart/Cart';
-import Watch from '../Watch/Watch';
-// import { Alert } from 'react-alert';
-import './Shop.css';
+import { useProducts } from '../../hooks/hooks';
+import ShopItems from '../ShopItems/ShopItems';
 
 const Shop = () => {
-    const [cart, setCart] = useState([]);
-    const [products, setProducts] = useState([]);
 
-    //load fake data from public folder.
-    useEffect(() => {
-        fetch('fakeData.json')
-            .then(res => res.json())
-            .then(data => setProducts(data));
-    }, []);
-
-    // event handler function to set slected items to cart.
-    const addToCart = selectedItem => {
-        const product = products.find(product => product.id === selectedItem);
-        if (cart.includes(product)) {
-            alert("Can't Add Same Item again");
-            return;
-        }
-        const newCart = [...cart, product];
-        if (newCart.length > 4) {
-            alert("Can't Add more then 4 items");
-            return;
-        }
-        setCart(newCart);
-    };
-
-    // event handler function to generet a random item.
-    const chooseOne = (items) => {
-        console.log(items.length);
-        if (items.length < 4) {
-            alert('Choose minimum 4 items');
-            return;
-        }
-        const x = Math.floor(Math.random() * items.length);
-        const newCart = [];
-        newCart.push(items[x]);
-        setCart(newCart);
-    };
-    // event handler function to reset products array.
-    const chooseAgain = () => {
-        const products = [];
-        setCart(products);
-    };
-
-    // event handler function to remove single items
-    const removeItem = id => {
-        const selectedItem = cart.find(product => product.id === id);
-        const newArr = cart.filter(item => item !== selectedItem);
-        setCart(newArr);
-        console.log(newArr);
-    };
+    const [products, setProducts] = useProducts();
 
     return (
-        <div className="main-section">
-            <div className="watch-part">
-                <h2 className="hidden-item">
-                    Cart section is given to the Bottom
-                </h2>
+        <div className='mt-4'>
+            <h1 className='text-4xl'>Hey, hello</h1>
+            <h2 className='text-2xl'>Welcome to shop {products.length}</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 mt-8 md:mx-12">
                 {
-                    products.map(product => <Watch
-                        key={product.id}
-                        product={product}
-                        addToCart={addToCart}
-                    ></Watch>)
+                    products.map(item => <ShopItems key={item.id} item={item}> </ShopItems>)
                 }
             </div>
-            <div className="cart-part">
-                <Cart
-                    chooseOne={chooseOne}
-                    chooseAgain={chooseAgain}
-                    removeItem={removeItem}
-                    cart={cart}
-                > </Cart>
-            </div>
+
+
         </div>
+
     );
 };
 

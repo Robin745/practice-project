@@ -1,0 +1,86 @@
+[
+    {
+        "id": "6348859dae5090799146d85d",
+        "index": 0,
+        "price": 290,
+        "picture": "products/sales.jpg",
+        "name": "Sales"
+    },
+    {
+        "id": "6348859d55a87997244f624d",
+        "index": 1,
+        "price": 321,
+        "picture": "products/tShirt.jpg",
+        "name": "T-Shirts"
+    },
+    {
+        "id": "6348859d249638e4199818f2",
+        "index": 2,
+        "price": 264,
+        "picture": "products/jacket.jpg",
+        "name": "Winter Jacket"
+    },
+    {
+        "id": "6348859dbc5b7b68c5b4ee28",
+        "index": 3,
+        "price": 184,
+        "picture": "products/earphone.jpg",
+        "name": "Earphones"
+    },
+    {
+        "id": "6348859dacb28a36e823b481",
+        "index": 4,
+        "price": 128,
+        "picture": "products/handBag.jpg",
+        "name": "Hand Bags"
+    },
+    {
+        "id": "6348859d063ad37a839d956d",
+        "index": 5,
+        "price": 133,
+        "picture": "products/teddyBeer.jpg",
+        "name": "Teddy Beers"
+    },
+    {
+        "id": "6348859d4cf3fc8a0bd7e6a6",
+        "index": 6,
+        "price": 79,
+        "picture": "products/laptop.jpg",
+        "name": "Laptops"
+    },
+    {
+        "id": "6348859d9c7ee9b53a5de1fe",
+        "index": 7,
+        "price": 42,
+        "picture": "products/mobileCover.jpg",
+        "name": "Mobile Covers"
+    },
+    {
+        "id": "6348859dd48bf1f6c0e128b5",
+        "index": 8,
+        "price": 221,
+        "picture": "products/shoe.jpg",
+        "name": "Shoes"
+    },
+    {
+        "id": "6348859d0cc54d072b7ef6a0",
+        "index": 9,
+        "price": 375,
+        "picture": "products/sunGlass.jpg",
+        "name": "Sun Glasses"
+    },
+    {
+        "id": "6348859dd2419bf8df31ef3b",
+        "index": 10,
+        "price": 223,
+        "picture": "products/watch.jpg",
+        "name": "Watches"
+    },
+    {
+        "id": "6348859d0bd83be001a8f772",
+        "index": 11,
+        "price": 299,
+        "picture": "products/wine.jpg",
+        "name": "Wine Bootles"
+    }
+]
