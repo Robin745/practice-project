@@ -4,35 +4,40 @@
         "index": 0,
         "price": 290,
         "picture": "products/sales.jpg",
-        "name": "Sales"
+        "name": "Asia",
+        "names": "Sales"
     },
     {
         "id": "6348859d55a87997244f624d",
         "index": 1,
         "price": 321,
         "picture": "products/tShirt.jpg",
-        "name": "T-Shirts"
+        "name": "America",
+        "names": "T-Shirts"
     },
     {
         "id": "6348859d249638e4199818f2",
         "index": 2,
         "price": 264,
         "picture": "products/jacket.jpg",
-        "name": "Winter Jacket"
+        "name": "Africa",
+        "names": "Winter Jacket"
     },
     {
         "id": "6348859dbc5b7b68c5b4ee28",
         "index": 3,
         "price": 184,
         "picture": "products/earphone.jpg",
-        "name": "Earphones"
+        "name": "Europe",
+        "names": "Earphones"
     },
     {
         "id": "6348859dacb28a36e823b481",
         "index": 4,
         "price": 128,
         "picture": "products/handBag.jpg",
-        "name": "Hand Bags"
+        "name": "Oceania",
+        "names": "Hand Bags"
     },
     {
         "id": "6348859d063ad37a839d956d",

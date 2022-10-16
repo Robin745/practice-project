@@ -1,11 +1,9 @@
 import React from "react";
-import { useCountries, useProducts } from "../../hooks/hooks";
+import { useProducts } from "../../hooks/hooks";
 import ShopItems from "../ShopItems/ShopItems";
 
 const Shop = () => {
     const [products, setProducts] = useProducts();
-    const [countries, setCountries] = useCountries();
-    console.log(countries);
     return (
         <div className="mt-4">
             <h1 className="text-4xl">From, Misrat Mehenaj</h1>
