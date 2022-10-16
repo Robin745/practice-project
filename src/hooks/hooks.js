@@ -12,5 +12,16 @@ const useProducts = () => {
 
     return [products, setProducts];
 };
+const useCountries = () => {
+    const [countries, setCountries] = useState([]);
 
-export { useProducts };
+    useEffect(() => {
+        fetch('https://restcountries.com/v3.1/all')
+            .then(res => res.json())
+            .then(data => setCountries(data));
+    }, []);
+
+    return [countries, setCountries];
+};
+
+export { useProducts, useCountries };
